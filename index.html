@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Streamline your retail operations with Daraza POS. A powerful, easy-to-use point-of-sale system for seamless transactions, inventory management, and business growth.">
+    <meta name="keywords"
+        content="POS system, point of sale, retail management, inventory management, Daraza POS, e-commerce, payment processing">
+    <meta name="author" content="Daraza">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Daraza POS | Point of Sale System for Retailers">
+    <meta property="og:description"
+        content="Transform your retail business with Daraza POS. Manage sales, inventory, and payments seamlessly with our powerful POS system.">
+    <meta property="og:image" content="./assets/img/pos-hero.png">
+    <meta property="og:url" content="https://pos.daraza.net">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Daraza POS | Point of Sale System for Retailers">
+    <meta name="twitter:description"
+        content="Transform your retail business with Daraza POS. Manage sales, inventory, and payments seamlessly with our powerful POS system.">
+    <meta name="twitter:image" content="./assets/img/pos-hero.png">
+    <meta name="twitter:url" content="https://pos.daraza.net">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pos.daraza.net/">
+
+    <title>Daraza POS | Point of Sale System for Retailers</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Smooth scroll for all browsers */
+        @media screen and (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-padding-top: 80px;
+            }
+        }
+
+        /* Enhanced scrollbar styling */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Daraza POS",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Windows, macOS, Linux",
+        "offers": {
+            "@type": "Offer",
+            "price": "50000.00",
+            "priceCurrency": "UGX",
+            "priceValidUntil": "2026-12-31"
+        },
+        "description": "A powerful point-of-sale system for retail businesses",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "reviewCount": "3"
+        }
+    }
+    </script>
+</head>
+
+<body class="font-sans text-gray-800 bg-gray-50">
+    <header role="banner">
+        <!-- Navigation -->
+        <nav role="navigation" aria-label="Main navigation" class="bg-gray-800 shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex">
+                        <div class="flex-shrink-0 flex items-center">
+                            <!-- Logo -->
+                            <span class="text-3xl font-bold text-blue-300 relative">Daraza<span
+                                    class="text-gray-100">POS&nbsp;&nbsp;</span>
+                                    <span id="season-icon" class="absolute top-0 right-0 w-8 h-8"></span>
+                            </span>
+                            <script>
+                                const seasonIcon = document.getElementById('season-icon');
+                                const month = new Date().getMonth();
+                                let iconSvg = '';
+
+                                if (month === 11 || month === 0) { // December or January
+                                    iconSvg = '<svg style="transform: rotate(35deg);" fill="#e00606" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 588.418 588.418" xml:space="preserve" stroke="#e00606"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M588.342,376.188c1.199-17.4-11.9-27.2-26.6-25.7c26.299-156.4-99.101-253.1-246.301-258.6 c-127.7-4.601-294.8,77.1-282.8,222.8c-1.8,1.5-1.8,4.6,0.3,6.1l0,0c0,1.2,0.3,2.101,0.6,3.4c-0.6,2.1-0.3,4.6,0.9,6.4 c0.3,1.8,0.6,3.699,0.9,5.5c-5.8,2.399-11.3,5.8-16.2,9.8c-24.5,20.5-23.6,47.7-2.8,65.8c-18.4,9.5-21.4,31.8-8.3,52.3 c18.7,29.101,52.6,23,69.5-2.399c20.2,46.5,94.6,45.6,119.3,4.6c15.9,20.8,45.6,29.4,59.1,6.4c16.8,19.3,47.099,17.1,55.399-5.2 c22.301,19.3,53.601,30.3,75.301,2.8c16.5-20.8,2.399-48.3-16.2-64c29.7-12.9,30-55.7,6.7-81.4c-1.5-1.8-3.4-3.399-4.9-4.6 c0.3-0.6,0.6-1.5,0.6-2.4c0-28.2-10.699-56-30.3-76.2c49,9.5,108,23.601,139.8,62.101c0,1.5,0.301,3.1,1.2,4.6 c3.7,6.101,8,11.9,12.5,17.4c1.5,3.7,3.101,7.3,4.301,11c-22.9-0.3-46.501,15.9-28.501,36.4 c-15.6,12.899-23.899,32.1-13.199,51.699c10.1,18.7,34,18.101,48.7,6.101c4.6,13.5,19.9,16.5,32.4,10.7 c13.5-6.101,17.1-20.2,14.4-33C572.742,408.888,587.143,396.088,588.342,376.188z M355.441,328.388c32.1,8.6,33.7,67-4,67 c-6.7,0-10.7,10.7-3.7,13.8c16.5,7.7,28.5,21.4,30,40.1c1.8,25.4-29.4,24.5-44.1,17.4c-7.301-3.4-13.801-8.9-20.2-14.1 c0-0.9,0-1.801,0-3.101c-0.601-5.2-6.101-7-9.5-4.6c-4.9-2.101-10.1,3.399-6.101,8.3c0.601,0.6,1.2,1.2,1.5,1.8 c-9.699,24.601-22.499,25.2-38.399,1.3c-2.4-5.8-10.4-6.699-12.5,0c-21.7,19.9-36.7,16.801-45-8.899c-2.1-6.7-12.2-7.3-14.4,0 c-12.5,47.7-85.7,45.6-106.8,5.8c-0.3-0.3-0.3-0.6-0.6-0.9c-0.3-4.899-6.1-8.899-9.8-4.3c-14.1,17.4-31.2,33-50.2,12.2 c-13.5-14.7-12.2-37.6,10.4-39.5c6.4-0.6,9.8-9.2,3.4-12.9c-26.9-14.699-26.9-38.6-2.1-55.399c9.8-6.7,21.7-9.2,33.4-8.601 c11.7,0.601,18.4,8,27.8,12.2v0.3c1.5,4.301,8.9,5.5,9.8,0c2.4-15,4.3-28.199,22.6-26.899c17.7,1.2,27.2,18.399,26.3,34.3 c-0.3,2.8,2.4,4.6,4.9,4.6c1.5,4.9,9.5,6.101,11.3,0c7-25.1,26.9-38.6,52.3-39.199c21.7-0.301,38.2,13.199,50.2,30 c0,0.6-0.3,1.199-0.3,1.8c-0.3,7,10.1,8,11.9,1.5C293.342,332.987,326.041,320.787,355.441,328.388z M549.143,398.188 c-3.4-0.9-7.602,2.4-6.102,6.1c4.301,10.101,3.4,20.2-5.799,27.2c-10.1,7.7-18.4,0.3-25.1-7.3c-0.9-1.2-2.102-1.2-3.102-0.9 c-1.199-0.899-2.799-0.899-4.299-0.3c-13.201,6.4-26.9,10.7-36.4-3.399c-10.4-15.301,2.1-32.7,15-41c2.8-1.801,4-6.101,1.199-8.601 c-23.3-20.8,19-26.6,33.4-22.3c3.4,0.9,5.201-4,2.4-5.5c-0.301-0.3-0.6-0.3-0.9-0.3c0.301-0.3,0.6-0.9,0.9-1.5 c1.5-3.7,3.4-7.3,5.5-10.101c3.4-1.5,6.699-3.1,10.1-4.6c1.201,0,2.801,0.3,4.301,0.9c10.699,3.699,12.9,16.8,10.4,26.3 c-0.301,1.2,0,2.1,0.299,3.1c-0.299,1.8,1.201,4.3,3.701,4c2.1,1.8,5.199,1.8,6.398-1.2c11.602-1.199,19.602,4,18.701,18.4 C577.941,392.388,564.441,401.888,549.143,398.188z"></path> </g> </g></svg>';
+                                }
+                                seasonIcon.innerHTML = iconSvg;
+                            </script>
+                        </div>
+                        <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                            <a href="#features"
+                                class="border-transparent text-gray-100 hover:border-blue-500 hover:text-blue-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                aria-label="POS Features">Features</a>
+                            <a href="#how-it-works"
+                                class="border-transparent text-gray-100 hover:border-blue-500 hover:text-blue-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                aria-label="How Daraza POS Works">How It Works</a>
+                            <a href="#pricing"
+                                class="border-transparent text-gray-100 hover:border-blue-500 hover:text-blue-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                aria-label="View Pricing">Pricing</a>
+                            <a href="https://daraza.net/docs/get_started/"
+                                class="border-transparent text-gray-100 hover:border-blue-500 hover:text-blue-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
+                                aria-label="Read Documentation">Documentation</a>
+                        </div>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:items-center">
+                        <a href="https://daraza.net/accounts/signUp/"
+                            class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-500 hover:bg-blue-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400"
+                            aria-label="Download DarazaPOS">
+                            Download
+                        </a>
+                    </div>
+                    <div class="flex items-center sm:hidden">
+                        <!-- Mobile menu button -->
+                        <button type="button"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                            aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main role="main">
+        <!-- Hero Section -->
+        <div class="bg-blue-50">
+            <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-24 flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 lg:pr-12">
+                    <h1 class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+                        <span class="block">Power Your Retail Business</span>
+                        <span class="block text-blue-500">with Daraza<span class="text-gray-700">POS</span></span>
+                    </h1>
+                    <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+                        The ultimate point-of-sale solution for seamless transactions, inventory management, and business growth.
+                    </p>
+                    <div class="mt-10 sm:flex sm:justify-start">
+                        <div class="rounded-md shadow">
+                            <a href="#get-started"
+                                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-700 hover:bg-blue-700 md:py-4 md:text-lg md:px-10" aria-label="Get started with Daraza POS">
+                                Download Software
+                            </a>
+                        </div>
+                        <div class="mt-3 sm:mt-0 sm:ml-3">
+                            <a href="https://daraza.net/docs/get_started/"
+                                class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10">
+                                Documentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 mt-12 lg:mt-0">
+                    <img src="./static/img/Daraza_POS.jpg" alt="Daraza POS system interface showing sales and inventory management" class="max-w-full rounded-lg shadow-lg" width="600" height="400" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div id="features" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-blue-600 tracking-wide uppercase">Features</h2>
+                    <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">Why Choose Daraza<span class="text-blue-500">POS</span>?</p>
+                    <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Everything you need to manage your retail business efficiently.</p>
+                </div>
+
+                <div class="mt-16">
+                    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="pt-6">
+                            <div class="rounded-lg bg-gray-50 px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div
+                                        class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                        <i class="fas fa-cash-register text-white text-2xl"></i>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Fast Checkout</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        Process sales quickly and efficiently with an intuitive interface.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="rounded-lg bg-gray-50 px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div
+                                        class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                        <i class="fas fa-boxes text-white text-2xl"></i>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Inventory Management</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        Track stock levels in real-time and receive low stock alerts.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="rounded-lg bg-gray-50 px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div
+                                        class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Sales Analytics</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        Gain insights into sales performance with detailed reports.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="rounded-lg bg-gray-50 px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div
+                                        class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                        <i class="fas fa-users text-white text-2xl"></i>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Customer Management</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        Store customer information and track purchase history.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="rounded-lg bg-gray-50 px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div
+                                        class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                        <i class="fas fa-mobile-alt text-white text-2xl"></i>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Mobile Money Payments</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        Accept mobile money payments seamlessly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="rounded-lg bg-gray-50 px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                        <i class="fas fa-bolt text-white text-2xl"></i>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Offline Mode</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        You can use DarazaPOS completely offline and backup your data when want or automatically through Data Sync
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6">
+                            <div class="rounded-lg bg-gray-50 px-6 pb-8">
+                                <div class="-mt-6">
+                                    <div
+                                        class="inline-flex items-center justify-center p-3 bg-blue-500 rounded-md shadow-lg">
+                                        <i class="fas fa-cloud text-white text-2xl"></i>
+                                    </div>
+                                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Cloud-Support</h3>
+                                    <p class="mt-5 text-base text-gray-500">
+                                        Access your data from anywhere with cloud storage.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- How It Works Section -->
+        <div id="how-it-works" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-blue-600 tracking-wide uppercase">How It Works</h2>
+                    <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">Simple Setup, Powerful Results</p>
+                    <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Get started with Daraza POS in just a few steps.</p>
+                </div>
+
+                <div class="mt-16">
+                    <div class="relative">
+                        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+                            <div class="w-full border-t border-gray-300"></div>
+                        </div>
+                        <div class="relative flex justify-center">
+                            <span class="bg-gray-50 px-3 text-lg font-medium text-gray-900">Setup Process</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 max-w-lg mx-auto grid gap-8 lg:grid-cols-3 lg:max-w-none">
+                        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                                <div class="flex-1">
+                                    <div class="text-center">
+                                        <span
+                                            class="inline-flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                            <span class="text-xl font-bold">1</span>
+                                        </span>
+                                    </div>
+                                    <p class="mt-3 text-center text-xl font-semibold text-gray-900">Installation</p>
+                                    <p class="mt-3 text-base text-gray-500">
+                                        Download and install Daraza on your computer, Create your Staff/User accounts and set up your store.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                                <div class="flex-1">
+                                    <div class="text-center">
+                                        <span
+                                            class="inline-flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                            <span class="text-xl font-bold">2</span>
+                                        </span>
+                                    </div>
+                                    <p class="mt-3 text-center text-xl font-semibold text-gray-900">Add Products</p>
+                                    <p class="mt-3 text-base text-gray-500">
+                                        Upload your inventory and set up product details.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                                <div class="flex-1">
+                                    <div class="text-center">
+                                        <span
+                                            class="inline-flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white">
+                                            <span class="text-xl font-bold">3</span>
+                                        </span>
+                                    </div>
+                                    <p class="mt-3 text-center text-xl font-semibold text-gray-900">Start Selling</p>
+                                    <p class="mt-3 text-base text-gray-500">
+                                        Process sales, manage inventory, and grow your business.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div id="pricing" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-blue-600 tracking-wide uppercase">Pricing</h2>
+                    <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">Affordable Plans for Every Business</p>
+                    <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Choose a plan that fits your needs.</p>
+                </div>
+
+                <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="px-6 py-8">
+                            <h3 class="text-2xl font-extrabold text-gray-900">Basic</h3>
+                            <div class="mt-4 flex items-center">
+                                <span class="text-5xl font-extrabold text-gray-900">Free</span>
+                                <span class="ml-3 text-xl font-medium text-gray-500">/forever</span>
+                            </div>
+                            <p class="mt-6 text-base text-gray-500">Perfect for small businesses.</p>
+                            <ul class="mt-8 space-y-5">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Software with Basic Features</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Unlimited Sales</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Basic Inventory Management</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Tech Support</p>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="#get-started"
+                                    class="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-700 hover:bg-blue-700">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="px-6 py-8">
+                            <h3 class="text-2xl font-extrabold text-gray-900">Pro</h3>
+                            <div class="mt-4 flex items-center">
+                                <span class="text-5xl font-extrabold text-gray-900">UGX 1,500,000</span>
+                                <span class="ml-3 text-xl font-medium text-gray-500">/forever</span>
+                            </div>
+                            <p class="mt-6 text-base text-gray-500">Ideal for growing businesses.</p>
+                            <ul class="mt-8 space-y-5">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Advanced Software</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">POS Hardware</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Cloud Backup and Data Sync</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Priority Support</p>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="#get-started"
+                                    class="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-700 hover:bg-blue-700">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="px-6 py-8">
+                            <h3 class="text-2xl font-extrabold text-gray-900">Enterprise</h3>
+                            <div class="mt-4 flex items-center">
+                                <span class="text-5xl font-extrabold text-gray-900">UGX 5,000,000</span>
+                                <span class="ml-3 text-xl font-medium text-gray-500">/Year</span>
+                            </div>
+                            <p class="mt-6 text-base text-gray-500">For large-scale businesses.</p>
+                            <ul class="mt-8 space-y-5">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">POS Hardware and Software</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Multi-Location Support</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Brand and Business Customization</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check h-5 w-5 text-green-500"></i>
+                                    <p class="ml-3 text-sm text-gray-700">Dedicated Storage and Computing</p>
+                                </li>
+                            </ul>
+                            <div class="mt-8">
+                                <a href="#get-started"
+                                    class="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-700 hover:bg-blue-700">
+                                    Get Started
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Get Started Section -->
+        <div id="get-started" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold text-blue-600 tracking-wide uppercase">Get Started</h2>
+                    <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">Ready to Transform Your Business?</p>
+                    <p class="max-w-xl mt-5 mx-auto text-xl text-gray-500">Sign up today and start using Daraza POS.</p>
+                </div>
+
+                <div class="mt-12 max-w-lg mx-auto">
+                    <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
+                        <div>
+                            <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <input type="text" name="full-name" id="full-name" autocomplete="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <label for="business-name" class="block text-sm font-medium text-gray-700">Business Name</label>
+                            <input type="text" name="business-name" id="business-name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                        </div>
+                        <div>
+                            <button type="submit" class="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-700 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Sign Up Now
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <span class="text-2xl font-bold text-blue-300">Daraza<span class="text-white">POS</span></span>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://daraza.net/privacy_policy" class="hover:text-blue-400"
+                        aria-label="Daraza Privacy Policy">Privacy Policy</a>
+                    <a href="https://daraza.net/terms_of_use" class="hover:text-blue-400"
+                        aria-label="Daraza Terms of Service">Terms of Service</a>
+                    <a href="mailto:support@daraza.net" class="hover:text-blue-400" aria-label="Contact Us">Contact
+                        Us</a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; <span id="year"></span> Daraza. All rights reserved.</p>
+                <script>
+                    document.getElementById('year').textContent = new Date().getFullYear();
+                </script>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
