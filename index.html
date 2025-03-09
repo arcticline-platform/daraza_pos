@@ -178,7 +178,24 @@
                     </div>
                 </div>
                 <div class="lg:w-1/2 mt-12 lg:mt-0">
-                    <img src="./static/img/Daraza_POS.jpg" alt="Daraza POS system interface showing sales and inventory management" class="max-w-full rounded-lg shadow-lg" width="600" height="400" loading="lazy">
+                    <img id="hero-image" src="./static/img/Daraza_POS.jpg" alt="Daraza POS system interface showing sales and inventory management" class="max-w-full rounded-lg shadow-lg" width="600" height="400" loading="lazy">
+                    <script>
+                        const images = [
+                            './static/img/pos.jpg',
+                            './static/img/Daraza_POS.jpg',
+                            './static/img/DarazaPOS2.jpg',
+                        ];
+                        let currentIndex = 0;
+                        
+                        function changeImage() {
+                            const img = document.getElementById('hero-image');
+                            currentIndex = (currentIndex + 1) % images.length;
+                            img.src = images[currentIndex];
+                        }
+
+                        // Change image every 5 seconds
+                        setInterval(changeImage, 5000);
+                    </script>
                 </div>
             </div>
         </div>
