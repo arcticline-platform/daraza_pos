@@ -1,2 +1,2 @@
 # daraza_pos
-Daraza POS
+DarazaPOS
